@@ -245,13 +245,17 @@ $(document).ready(function() {
       cf_message: cf_message
     };
 
+    if(cf_email.indexOf('@') < 0) {
+      return alert('Please enter a valid email address.');
+    }
+
     $.post('https://api.aquabyte.ai/send_email', body, function() {
       alert('Thank you for the message. We will be in touch shortly.');
-      //window.location = '/';
+      window.location = '/';
     })
     .fail(function() {
       alert('Message failed. Please, send an email to info@aquabyte.ai');
-      //window.location = '/';
+      window.location = '/';
     });
 
     // var subject = 'Message from ' + cf_name;
