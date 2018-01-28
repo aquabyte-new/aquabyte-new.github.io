@@ -245,17 +245,31 @@ $(document).ready(function() {
       cf_message: cf_message
     };
 
-    if(cf_email.indexOf('@') < 0) {
+    if (cf_email.indexOf('@') < 0) {
+      if (window.location.pathname.indexOf('hjem' > -1)) {
+        return alert('Vennligst fyll inn en gyldig epostadresse.');
+      }
+
       return alert('Please enter a valid email address.');
     }
 
     $.post('https://api.aquabyte.ai/send_email', body, function() {
-      alert('Thank you for the message. We will be in touch shortly.');
-      window.location = '/';
+      if (window.location.pathname.indexOf('hjem' > -1)) {
+        alert('Takk for meldingen. Du hører snart fra oss.');
+        window.location = '/hjem';
+      } else {
+        alert('Thank you for the message. We will be in touch shortly.');
+        window.location = '/';
+      }
     })
     .fail(function() {
-      alert('Message failed. Please, send an email to info@aquabyte.ai');
-      window.location = '/';
+      if (window.location.pathname.indexOf('hjem' > -1)) {
+        alert('Melding ble ikke sendt. Vennligst send en epost til info@aquabyte.no');
+        window.location = '/hjem';
+      } else {
+        alert('Message failed. Please, send an email to info@aquabyte.ai');
+        window.location = '/';
+      }
     });
 
     // var subject = 'Message from ' + cf_name;
