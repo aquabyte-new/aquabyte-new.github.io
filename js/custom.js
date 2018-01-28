@@ -1,6 +1,6 @@
-// var host = 'www.aquabyte.no';
-// if ((host == window.location.host) && (window.location.protocol != 'https:'))
-//     window.location.protocol = 'https';
+var host = 'www.aquabyte.no';
+if ((host == window.location.host) && (window.location.protocol != 'https:'))
+    window.location.protocol = 'https';
 
 // Catch verticle scroll
 $(document).ready(function() {
