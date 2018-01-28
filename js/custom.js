@@ -1,3 +1,7 @@
+var host = 'www.aquabyte.no';
+if ((host == window.location.host) && (window.location.protocol != 'https:'))
+    window.location.protocol = 'https';
+
 // Catch verticle scroll
 $(document).ready(function() {
     $(window).on("scroll", function() {
@@ -241,7 +245,7 @@ $(document).ready(function() {
       cf_message: cf_message
     };
 
-    $.post('http://api.aquabyte.ai/send_email', body, function() {
+    $.post('https://api.aquabyte.ai/send_email', body, function() {
       alert('Thank you for the message. We will be in touch shortly.');
       //window.location = '/';
     })
