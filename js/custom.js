@@ -1,4 +1,4 @@
-var host = 'aquabyteai.github.io';
+var host = 'www.aquabyte.no';
 if ((host == window.location.host) && (window.location.protocol != 'https:'))
     window.location.protocol = 'https';
 
