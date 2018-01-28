@@ -15,6 +15,24 @@ function myFunction() {
     }
 }
 
+// function sendEmail(subject, html) {
+//   var from = 'no-reply@aquabyte.ai';
+//   var recipients = [ 
+//     { address: 'info@aquabyte.ai' }
+//   ];
+
+//   var sparkpostData = {
+//     content: {
+//       from: from,
+//       subject: subject,
+//       html: '<html><body>' + html + '</body></html>'
+//     },
+//     recipients: recipients
+//   };
+
+
+// }
+
 // add class to another class on click or hover
 $(document).ready(function(){
     $(".tab-team-control").click(function(){
@@ -204,4 +222,44 @@ $( '.clause-editor-textarea' ).on( 'mousewheel DOMMouseScroll', function ( e ) {
     this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
     e.preventDefault();
 });
+});
+
+//send emails
+$(document).ready(function() {
+  $('.landing-contact :submit').on('click', function(e) {
+    e.preventDefault();
+
+    var cf_name = $('input[name=cf_name').val();
+    var cf_email = $('input[name=cf_email').val();
+    var cf_subject = $('input[name=cf_subject').val();
+    var cf_message = $('textarea[name=cf_message').val();
+
+    var body = {
+      cf_name: cf_name,
+      cf_email: cf_email,
+      cf_subject: cf_subject,
+      cf_message: cf_message
+    };
+
+    $.post('http://api.aquabyte.ai/send_email', body, function() {
+      alert('Thank you for the message. We will be in touch shortly.');
+      //window.location = '/';
+    })
+    .fail(function() {
+      alert('Message failed. Please, send an email to info@aquabyte.ai');
+      //window.location = '/';
+    });
+
+    // var subject = 'Message from ' + cf_name;
+    // var html = '<div>'
+    //   + '<p>From: ' + cf_name
+    //   + '</p><p>E-mail: ' + cf_email
+    //   + '</p><p>Subject: ' + cf_subject
+    //   + '</p><p>Message: ' + cf_message
+    //   + '</p>';
+    
+    // console.log('clicked');
+
+    // sendEmail(subject, html);
+  });
 });
