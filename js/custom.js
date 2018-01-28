@@ -246,7 +246,7 @@ $(document).ready(function() {
     };
 
     if (cf_email.indexOf('@') < 0) {
-      if (window.location.pathname.indexOf('hjem' > -1)) {
+      if (window.location.pathname.indexOf('hjem') > -1) {
         return alert('Vennligst fyll inn en gyldig epostadresse.');
       }
 
@@ -254,7 +254,7 @@ $(document).ready(function() {
     }
 
     $.post('https://api.aquabyte.ai/send_email', body, function() {
-      if (window.location.pathname.indexOf('hjem' > -1)) {
+      if (window.location.pathname.indexOf('hjem') > -1) {
         alert('Takk for meldingen. Du hører snart fra oss.');
         window.location = '/hjem';
       } else {
@@ -263,7 +263,7 @@ $(document).ready(function() {
       }
     })
     .fail(function() {
-      if (window.location.pathname.indexOf('hjem' > -1)) {
+      if (window.location.pathname.indexOf('hjem') > -1) {
         alert('Melding ble ikke sendt. Vennligst send en epost til info@aquabyte.no');
         window.location = '/hjem';
       } else {
