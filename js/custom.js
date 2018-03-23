@@ -228,6 +228,15 @@ $( '.clause-editor-textarea' ).on( 'mousewheel DOMMouseScroll', function ( e ) {
 });
 });
 
+//popup modal
+  function openPopup(el) {
+   $('.popup').hide();
+   $('#' + el).fadeIn(200);   
+  }
+
+  function closePopup() {
+    $('.popup').fadeOut(300);
+  }
 //send emails
 $(document).ready(function() {
   $('.landing-contact :submit').on('click', function(e) {
