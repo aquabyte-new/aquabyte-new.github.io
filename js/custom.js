@@ -242,16 +242,18 @@ $(document).ready(function() {
   $('.landing-contact :submit').on('click', function(e) {
     e.preventDefault();
 
-    var cf_name = $('input[name=cf_name').val();
-    var cf_email = $('input[name=cf_email').val();
-    var cf_subject = $('input[name=cf_subject').val();
-    var cf_message = $('textarea[name=cf_message').val();
+    var cf_name = $('input[name=cf_name]').val();
+    var cf_email = $('input[name=cf_email]').val();
+    var cf_subject = $('input[name=cf_subject]').val();
+    var cf_message = $('textarea[name=cf_message]').val();
+    var cf_newsletter = $('input[name=cf_newsletter]').is(':checked');
 
     var body = {
       cf_name: cf_name,
       cf_email: cf_email,
       cf_subject: cf_subject,
-      cf_message: cf_message
+      cf_message: cf_message,
+      cf_newsletter: cf_newsletter
     };
 
     if (cf_email.indexOf('@') < 0) {
