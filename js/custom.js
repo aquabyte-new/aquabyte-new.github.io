@@ -266,7 +266,7 @@ $(document).ready(function() {
 
     $.post('https://api.aquabyte.ai/send_email', body, function() {
       if (window.location.pathname.indexOf('hjem') > -1) {
-        alert('Takk for meldingen. Du hører snart fra oss.');
+        alert('Takk for meldingen - du hører fra oss snart.');
         window.location = '/hjem';
       } else {
         alert('Thank you for the message. We will be in touch shortly.');
