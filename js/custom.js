@@ -264,7 +264,7 @@ $(document).ready(function() {
       return alert('Please enter a valid email address.');
     }
 
-    $.post('https://api.aquabyte.ai/send_email', body, function() {
+    $.post('https://marketing-backend.aquabyte.ai/send_email', body, function() {
       if (window.location.pathname.indexOf('hjem') > -1) {
         alert('Takk for meldingen - du hører fra oss snart.');
         window.location = '/hjem';
