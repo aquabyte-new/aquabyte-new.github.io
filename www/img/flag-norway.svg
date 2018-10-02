@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="16px" viewBox="0 0 24 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Aquabyte-Homepage-Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1254.000000, -54.000000)">
+        <g id="Header" transform="translate(0.000000, -10.000000)">
+            <g id="Right" transform="translate(1049.000000, 48.000000)">
+                <g id="Page-1" transform="translate(205.000000, 16.000000)">
+                    <polygon id="Fill-1" fill="#DC1C37" points="0 15.66328 23.6922353 15.66328 23.6922353 8e-05 0 8e-05"></polygon>
+                    <polygon id="Fill-2" fill="#FFFFFF" points="5.18329412 15.66328 8.63717647 15.66328 8.63717647 8e-05 5.18329412 8e-05"></polygon>
+                    <polygon id="Fill-3" fill="#FFFFFF" points="0 9.78968 23.6922353 9.78968 23.6922353 5.87448 0 5.87448"></polygon>
+                    <polygon id="Fill-4" fill="#192967" points="6.04588235 15.66328 7.77317647 15.66328 7.77317647 8e-05 6.04588235 8e-05"></polygon>
+                    <polygon id="Fill-5" fill="#192967" points="0 8.81128 23.6922353 8.81128 23.6922353 6.85368 0 6.85368"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
