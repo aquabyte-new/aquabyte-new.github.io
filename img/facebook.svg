@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Aquabyte-Homepage-Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1256.000000, -4855.000000)">
+        <g id="Contact-Details" transform="translate(-55.000000, 4690.000000)" fill="#2D4359">
+            <g id="Group-16" transform="translate(1187.000000, 80.000000)">
+                <g id="Social" transform="translate(55.000000, 85.000000)">
+                    <path d="M87,17.006156 C87,17.554805 86.5552832,18 86.0066193,18 L81.4197107,18 L81.4197107,11.0293637 L83.7594999,11.0293637 L84.110076,8.31308564 L81.4197107,8.31308564 L81.4197107,6.57839399 C81.4197107,5.79194814 81.6383918,5.25604707 82.7661191,5.25604707 L84.204707,5.25555677 L84.204707,2.8256156 C83.9556264,2.79276531 83.1019858,2.71872957 82.1086051,2.71872957 C80.0345673,2.71872957 78.6146114,3.98469165 78.6146114,6.309708 L78.6146114,8.31308564 L76.2689385,8.31308564 L76.2689385,11.0293637 L78.6146114,11.0293637 L78.6146114,18 L69.9933807,18 C69.4447168,18 69,17.554805 69,17.006156 L69,0.993843975 C69,0.444704729 69.4447168,0 69.9933807,0 L86.0066193,0 C86.5552832,0 87,0.444704729 87,0.993843975 L87,17.006156" id="Facebook"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
