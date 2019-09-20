@@ -4,7 +4,7 @@ $field_email = $_POST['cf_email'];
 $field_subject = $_POST['cf_subject'];
 $field_message = $_POST['cf_message'];
 
-$mail_to = 'info@aquabyte.ai';
+$mail_to = 'bizdev@aquabyte.ai';
 $subject = 'Message from'.$field_name;
 
 $body_message = 'From: '.$field_name."\n";
@@ -27,7 +27,7 @@ if ($mail_status) { ?>
 }
 else { ?>
 	<script language="javascript" type="text/javascript">
-		alert('Message failed. Please, send an email to info@aquabyte.ai');
+		alert('Message failed. Please, send an email to bizdev@aquabyte.ai');
 		window.location = '/';
 	</script>
 <?php
