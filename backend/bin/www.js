@@ -105,10 +105,10 @@ app.post('/send_email', async (req, res, next) => {
     + '</p>';
 
   let recipients = [ 
-    { address: 'bizops@aquabyte.ai' }
+    { address: 'bizdev@aquabyte.ai' }
   ];
 
-  await sendEmail('info@aquabyte.ai', recipients, '[' + env + '] ' + subject, html, undefined);
+  await sendEmail('bizdev@aquabyte.ai', recipients, '[' + env + '] ' + subject, html, undefined);
 
   res.status(200).send('ok');
 });
