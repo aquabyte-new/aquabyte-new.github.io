@@ -2,6 +2,46 @@ var host = "www.aquabyte.no";
 if (host == window.location.host && window.location.protocol != "https:")
   window.location.protocol = "https";
 
+const languageToLink = {
+  english: "",
+  norsk: "hjem",
+  espanol: "espanol"
+};
+const selectedLanguage = localStorage.getItem("selectedLanguage");
+
+// if user set their language before, load that link
+if (selectedLanguage !== null) {
+  if (
+    selectedLanguage !== "english" &&
+    window.location.href.indexOf(languageToLink[selectedLanguage]) === -1
+  ) {
+    window.location = `${window.location.origin}/${languageToLink[selectedLanguage]}/`;
+  }
+} else {
+  // Redirect to norwegian site if user's browser is from Norway
+  // and they've never set the language manually
+  const norwegianLocales = [
+    "no",
+    "nb",
+    "no-NO",
+    "nb-NO",
+    "nb-SJ",
+    "nn",
+    "nn-NO"
+  ];
+  const curLang = window.navigator.userLanguage || window.navigator.language;
+  const isOnNorwegianSite =
+    window.location.href.indexOf(languageToLink.norsk) !== -1;
+  if (norwegianLocales.includes(curLang) && !isOnNorwegianSite) {
+    window.location = `${window.location.origin}/${languageToLink.norsk}`;
+    localStorage.setItem("selectedLanguage", "norsk");
+  }
+}
+
+function setSelectedLanguage(newLang) {
+  localStorage.setItem("selectedLanguage", newLang);
+}
+
 // Catch verticle scroll
 $(document).ready(function() {
   $(window).on("scroll", function() {
