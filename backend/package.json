@@ -15,7 +15,7 @@
     "cors": "^2.8.1",
     "express": "^4.14.1",
     "heroku-ssl-redirect": "0.0.3",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.19",
     "morgan": "^1.8.1",
     "sparkpost": "^2.1.2"
   }
